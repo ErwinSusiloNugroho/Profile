@@ -198,11 +198,19 @@
         .btn-secondary {
             background: transparent;
             color: white;
-            border: 2px solid white;
+            border: 2px solid rgb(255, 255, 255);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
         }
 
-        .btn:hover {
-            transform: translateY(-3px);
+        /* Phone mode: btn-secondary color black, border black */
+        @media (max-width: 768px) {
+            .btn-secondary {
+                color: #111;
+                border: 2px solid #111;
+            }
+        }
+        .btn:hover {       transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
 
